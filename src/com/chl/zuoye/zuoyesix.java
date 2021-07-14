@@ -21,21 +21,21 @@ public class zuoyesix {
     }
 
     private static int chu(String str) {
-        String [] s = str.split("\\/ ");
+        String [] s = str.split("\\/");
         Integer integer = Integer.valueOf(s[0]);
         Integer integer1 = integer.valueOf(s[1]);
         return integer/integer1;
     }
 
     private static int cheng(String str) {
-        String [] s = str.split("\\* ");
+        String [] s = str.split("\\*");
         Integer integer = Integer.valueOf(s[0]);
         Integer integer1 = integer.valueOf(s[1]);
         return integer*integer1;
     }
 
     private static int jian(String str) {
-        String [] s = str.split("- ");
+        String [] s = str.split("-");
         Integer integer = Integer.valueOf(s[0]);
         Integer integer1 = integer.valueOf(s[1]);
         return integer-integer1;
