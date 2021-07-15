@@ -24,7 +24,7 @@ public class Test04 {
 
         Date nowdate = new Date(); //获取当前的时间
         String date = sdf.format(nowdate);
-        System.out.println("促销日期"+date);
+        System.out.println("促销日期:"+date);
 
 
     }
