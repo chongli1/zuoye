@@ -17,7 +17,6 @@ public class Test09 {
         Scanner scan = new Scanner(System.in);
         System.out.println("请输入员工信息：");
         String str = scan.nextLine();
-
     }
 }
 
