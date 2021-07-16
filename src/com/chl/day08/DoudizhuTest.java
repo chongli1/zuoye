@@ -11,6 +11,7 @@ import java.util.List;
  *
  */
 public class DoudizhuTest {
+    //提取为成员变量
     private static ArrayList<String> dipai;
     private static ArrayList<String> player1;
     private static ArrayList<String> player2;
@@ -24,7 +25,7 @@ public class DoudizhuTest {
         colors.add("♠");
         colors.add("♣");
         colors.add("♦");
-        //2、造出10 个 2-10
+        //2、造出4 个 2-10
         ArrayList<String> numbers = new ArrayList<>();
         for (int i = 2; i <=10 ; i++) {
             numbers.add(i+"");
@@ -36,7 +37,7 @@ public class DoudizhuTest {
         System.out.println("numbers = " + numbers);
 
         //3、上面的 colors 和 number进行一个 整合
-        //放入到一个 新的集合中 如果做到呢？嵌套循环
+        //放入到一个 新的集合中 如何做到呢？嵌套循环
         piker = new ArrayList<>();
         //Set<String> piker = new HashSet<>();
         for (String color : colors) {
