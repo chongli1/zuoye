@@ -12,11 +12,11 @@ public class Test03 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入一个目录：");
-        String input = sc.nextLine().trim(); //trim()：去除两边空格
-        File file = new File("a");
+        String input = sc.nextLine().trim(); //trim()：去除两边边框
+        File file = new File(input);
         boolean nowfile = file.exists();
         if (!nowfile) {
-            file.mkdirs();  //创建目录
+            file.mkdirs();
             System.out.println("目录已存在，可创建副本 ：" + nowfile);
         }else{
             int index = 0;
