@@ -13,7 +13,7 @@ public class Test05 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入一个文件或目录名：");
         String s = scanner.nextLine();
-        File file = new File("a" + s);
+        File file = new File(s);
         boolean files = file.exists();
         if (files) {
             file.delete();

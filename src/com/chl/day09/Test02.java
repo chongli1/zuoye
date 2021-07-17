@@ -15,7 +15,7 @@ public class Test02 {
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入一个文件名:");
         String input = sc.nextLine().trim(); //trim():去除两端的空格
-        File file = new File("test.txt");
+        File file = new File(input);
         System.out.println("file = " + file);
         boolean nowfile = file.exists();
         if (!nowfile) { //如果文件不存在，则创建文件
